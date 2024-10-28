@@ -51,25 +51,25 @@ build cmake_object_order_depends_target_os_lab1: phony || CMakeFiles/os_lab1.dir
 
 build CMakeFiles/os_lab1.dir/shell.cpp.obj: CXX_COMPILER__os_lab1_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/shell.cpp || cmake_object_order_depends_target_os_lab1
   DEP_FILE = CMakeFiles\os_lab1.dir\shell.cpp.obj.d
-  FLAGS = -O0 -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\os_lab1.dir
   OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir
 
 build CMakeFiles/os_lab1.dir/bench1.cpp.obj: CXX_COMPILER__os_lab1_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/bench1.cpp || cmake_object_order_depends_target_os_lab1
   DEP_FILE = CMakeFiles\os_lab1.dir\bench1.cpp.obj.d
-  FLAGS = -O0 -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\os_lab1.dir
   OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir
 
 build CMakeFiles/os_lab1.dir/bench2.cpp.obj: CXX_COMPILER__os_lab1_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/bench2.cpp || cmake_object_order_depends_target_os_lab1
   DEP_FILE = CMakeFiles\os_lab1.dir\bench2.cpp.obj.d
-  FLAGS = -O0 -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\os_lab1.dir
   OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir
 
 build CMakeFiles/os_lab1.dir/multi_bench.cpp.obj: CXX_COMPILER__os_lab1_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/multi_bench.cpp || cmake_object_order_depends_target_os_lab1
   DEP_FILE = CMakeFiles\os_lab1.dir\multi_bench.cpp.obj.d
-  FLAGS = -O0 -g -fdiagnostics-color=always
+  FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\os_lab1.dir
   OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir
 
@@ -82,7 +82,7 @@ build CMakeFiles/os_lab1.dir/multi_bench.cpp.obj: CXX_COMPILER__os_lab1_unscanne
 # Link the executable os_lab1.exe
 
 build os_lab1.exe: CXX_EXECUTABLE_LINKER__os_lab1_Debug CMakeFiles/os_lab1.dir/shell.cpp.obj CMakeFiles/os_lab1.dir/bench1.cpp.obj CMakeFiles/os_lab1.dir/bench2.cpp.obj CMakeFiles/os_lab1.dir/multi_bench.cpp.obj
-  FLAGS = -O0 -g
+  FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\os_lab1.dir
   POST_BUILD = cd .
