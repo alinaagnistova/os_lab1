@@ -36,6 +36,36 @@ void boyer_moor_search(string &txt, string &pattern) {
     }
 
 }
+//Добавление буфера для выполнения примечания для ema-
+void read_file_and_search(string &path_to_file, string &pattern) {
+    const size_t BUFFER_SIZE = 32 * 1024 * 1024; // 32 MiB
+    string buffer;
+    string prev_line;
+    ifstream file(path_to_file);
+    if (!file) {
+        cerr << "Error opening file" << '\n';
+        return;
+    }
+    while (file) {
+        string line;
+        while (buffer.size() < BUFFER_SIZE && getline(file, line)) {
+            buffer += prev_line + line + '\n';
+            prev_line = "";
+        }
+        if (buffer.size() >= BUFFER_SIZE || !file) {
+            boyer_moor_search(buffer, pattern);
+            buffer.clear();
+        }
+        if (!line.empty()) {
+            prev_line = line;
+        }
+    }
+    if (!buffer.empty()) {
+        boyer_moor_search(buffer, pattern);
+    }
+    file.close();
+
+}
 
 int main(int argc, char *argv[]) {
     if (argc < 4) {
@@ -45,21 +75,10 @@ int main(int argc, char *argv[]) {
     string path_to_file = argv[1];
     string pattern = argv[2];
     int repeat_count = stoi(argv[3]);
-    ifstream file(path_to_file);
-    if (!file) {
-        cerr << "Error opening file" << '\n';
-        return 1;
-    }
-    string txt;
-    string line;
-    while (getline(file, line)) {
-        txt += line + "\n";
-    }
-    file.close();
 
     auto start_time = chrono::high_resolution_clock::now();
     for (int i = 0; i < repeat_count; ++i) {
-        boyer_moor_search(txt, pattern);
+        read_file_and_search(path_to_file, pattern);
     }
 
     auto end_time = chrono::high_resolution_clock::now();

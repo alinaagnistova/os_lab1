@@ -10,7 +10,7 @@ int main() {
         cout << "shell> ";
         getline(cin, command_line);
 
-        if (command_line == "exit"){
+        if (command_line == "exit") {
             break;
         }
         SYSTEMTIME start_time;
@@ -25,7 +25,7 @@ int main() {
         string cmd = "cmd.exe /C " + command_line;
         if (CreateProcess(
                 NULL,
-                const_cast<char*>(cmd.c_str()),
+                const_cast<char *>(cmd.c_str()),
                 NULL,
                 NULL,
                 FALSE,
