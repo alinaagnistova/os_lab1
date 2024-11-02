@@ -35,7 +35,8 @@ add_executable(tests
 )
 
 target_link_libraries(tests gtest gtest_main gmock gmock_main)
-
+configure_file(${CMAKE_SOURCE_DIR}/src/tests/data/text.txt
+        ${CMAKE_BINARY_DIR}/data/text.txt COPYONLY)
 # Включаем поддержку тестов
 enable_testing()
 add_test(NAME EMASearchTest COMMAND tests)

@@ -5,7 +5,7 @@
 2407	2781	7522885256443615	os_lab1.exe	7731331968cf0725
 5	1818	7522890627648751	CMakeFiles/tests.dir/src/tests/test_main.cpp.obj	f8b4bce4e48fe030
 12	69	7518383889789761	CMakeFiles/os_lab1.dir/shell.cpp.obj	5dc0a32404f8a635
-1	173	7522892366114001	build.ninja	6b29380ee2bfc45a
+1	173	7522907157957163	build.ninja	6b29380ee2bfc45a
 7	60	7518385974584293	CMakeFiles/os_lab1.dir/bench2.cpp.obj	1c83529e396a7f17
 17	91	7520263534274134	CMakeFiles/os_lab1.dir/src/bench1.cpp.obj	54dc8b1ddf138392
 6	55	7518385435450232	CMakeFiles/os_lab1.dir/multi_bench.cpp.obj	a0ea2d9028e39b88

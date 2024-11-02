@@ -38,6 +38,11 @@ jobs:
         shell: pwsh
         continue-on-error: true
 
+      - name: Copy data files
+        run: |
+         copy src\tests\data\text.txt build\data\text.txt
+        shell: pwsh
+
       - name: Run tests
         working-directory: build\Debug
         run: |
