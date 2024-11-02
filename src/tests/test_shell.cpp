@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include "../../include/shell.hpp"
-#include "../../cmake-build-debug/_deps/googletest-src/googlemock/include/gmock/gmock-matchers.h"
+#include <gmock/gmock.h>
 #include <windows.h>
 #include <string>
 #include <sstream>
