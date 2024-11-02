@@ -3,7 +3,7 @@
 #include <windows.h>
 using namespace std;
 
-void execute_command(string& command_line){
+void ExecuteCommand(string& command_line){
     SYSTEMTIME start_time;
     GetSystemTime(&start_time);
 
@@ -15,14 +15,14 @@ void execute_command(string& command_line){
 
     string cmd = "cmd.exe /C " + command_line;
     if (CreateProcess(
-            NULL, // путь к исполняемому файлу
+            nullptr, // путь к исполняемому файлу
             const_cast<char *>(cmd.c_str()),  // командная строка
-            NULL,  // атрибуты защиты процесса
-            NULL, // атрибуты защиты потока
+            nullptr,  // атрибуты защиты процесса
+            nullptr, // атрибуты защиты потока
             FALSE, // наследовать дескрипторы
             0,   // флаги создания
-            NULL,  // переменные среды
-            NULL,   // текущая директория
+            nullptr,  // переменные среды
+            nullptr,   // текущая директория
             &startup_info,  // информация о старте
             &process_info) // информация о процессе
             ) {
@@ -42,8 +42,8 @@ void execute_command(string& command_line){
         uli_start.HighPart = ft_start.dwHighDateTime;
         uli_end.LowPart = ft_end.dwLowDateTime;
         uli_end.HighPart = ft_end.dwHighDateTime;
-
-        double execution_time = (uli_end.QuadPart - uli_start.QuadPart) / 10000000.0;
+        const double ticks_per_second = 10000000.0;
+        double execution_time = (uli_end.QuadPart - uli_start.QuadPart) / ticks_per_second;
         cout << "Execution time: " << execution_time << " seconds" << '\n';
 
         CloseHandle(process_info.hProcess);
@@ -53,7 +53,7 @@ void execute_command(string& command_line){
     }
 }
 
-int main() {
+void ExecuteShell() {
     string command_line;
     while (true) {
         cout << "shell> ";
@@ -70,8 +70,6 @@ int main() {
             cout << "Exiting...";
             break;
         }
-        execute_command(command_line);
+        ExecuteCommand(command_line);
     }
-
-    return 0;
 }

@@ -6,40 +6,47 @@
 #include <chrono>
 
 using namespace std;
+
+
 //ema-search-str поиск подстроки в тексте во внешней памяти
 //По алгоритму Бойера-Мура
-#define NO_OF_CHARS 256 //кол-во возможных символов (256 для ASCII)
+enum {
+    NoOfChars = 256
+};//кол-во возможных символов (256 для ASCII)
 
-void bad_char_heuristic(const string &pattern, vector<int> &bad_char) {
-    int length = pattern.length();
+void BadCharHeuristic(const string &pattern, vector<int> &bad_char) {
+    int const length = pattern.length();
     for (int i = 0; i < length; i++) {
         bad_char[static_cast<int>(pattern[i])] = i;
     }
 }
 
-void boyer_moor_search(string &txt, string &pattern) {
-    int m = pattern.length();
-    int n = txt.length();
-    vector<int> bad_char(NO_OF_CHARS, -1);
-    bad_char_heuristic(pattern, bad_char);
-    int s = 0;
-    while (s <= n - m) {
-        int j = m - 1;
-        while (j >= 0 && pattern[j] == txt[s + j]) {
-            j--;
+void BoyerMoorSearch(string &txt, string &pattern) {
+    int const pattern_length = pattern.length();
+    int const txt_length = txt.length();
+    vector<int> bad_char(NoOfChars, -1);
+    BadCharHeuristic(pattern, bad_char);
+    int shift = 0;
+    while (shift <= txt_length - pattern_length) {
+        int idx = pattern_length - 1;
+        while (idx >= 0 && pattern[idx] == txt[shift + idx]) {
+            idx--;
         }
-        if (j < 0) {
-            cout << "Pattern occurs at shift =  " << s << '\n';
-            s += (s + m < n) ? m - bad_char[static_cast<int>(txt[s + m])] : 1;
+        if (idx < 0) {
+            cout << "Pattern occurs at shift =  " << shift << '\n';
+            shift += (shift + pattern_length < txt_length) ? pattern_length -
+                                                             bad_char[static_cast<int>(txt[shift + pattern_length])]
+                                                           : 1;
         } else {
-            s += max(1, j - bad_char[static_cast<int>(txt[s + j])]);
+            shift += max(1, idx - bad_char[static_cast<int>(txt[shift + idx])]);
         }
     }
 
 }
+
 //Добавление буфера для выполнения примечания для ema-
-void read_file_and_search(string &path_to_file, string &pattern) {
-    const size_t BUFFER_SIZE = 32 * 1024 * 1024; // 32 MiB
+void ReadFileAndSearch(string &path_to_file, string &pattern) {
+    const auto buffer_size = static_cast<const size_t>(32 * 1024 * 1024); // 32 MiB
     string buffer;
     string prev_line;
     ifstream file(path_to_file);
@@ -49,12 +56,12 @@ void read_file_and_search(string &path_to_file, string &pattern) {
     }
     while (file) {
         string line;
-        while (buffer.size() < BUFFER_SIZE && getline(file, line)) {
+        while (buffer.size() < buffer_size && getline(file, line)) {
             buffer += prev_line + line + '\n';
             prev_line = "";
         }
-        if (buffer.size() >= BUFFER_SIZE || !file) {
-            boyer_moor_search(buffer, pattern);
+        if (buffer.size() >= buffer_size || !file) {
+            BoyerMoorSearch(buffer, pattern);
             buffer.clear();
         }
         if (!line.empty()) {
@@ -62,28 +69,19 @@ void read_file_and_search(string &path_to_file, string &pattern) {
         }
     }
     if (!buffer.empty()) {
-        boyer_moor_search(buffer, pattern);
+        BoyerMoorSearch(buffer, pattern);
     }
     file.close();
 
 }
 
-void ema_search_str(string &path_to_file, string &pattern, int repeat_count) {
-//    if (argc < 4) {
-//        cerr << "Usage: " << argv[0] << " <file_path> <pattern> <repeat_count>\n";
-//        return 1;
-//    }
-//    string path_to_file = argv[1];
-//    string pattern = argv[2];
-//    int repeat_count = stoi(argv[3]);
-
+void EmaSearchStr(string &path_to_file, string &pattern, int repeat_count) {
     auto start_time = chrono::high_resolution_clock::now();
     for (int i = 0; i < repeat_count; ++i) {
-        read_file_and_search(path_to_file, pattern);
+        ReadFileAndSearch(path_to_file, pattern);
     }
 
     auto end_time = chrono::high_resolution_clock::now();
-    chrono::duration<double> elapsed = end_time - start_time;
-    cout << "Total execution time: " << elapsed.count() << " seconds\n";;
-//    return 0;
+    chrono::duration<double> const elapsed = end_time - start_time;
+    cout << "Total execution time: " << elapsed.count() << " seconds\n";
 }

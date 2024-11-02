@@ -7,11 +7,11 @@
 
 using namespace std;
 
-void bubble_sort(vector<int> &arr);
+void BubbleSort(vector<int> &arr);
 
-vector<int> create_array(int array_size);
+auto CreateArray(int array_size) -> vector<int>;
 
-void sort(int array_size, int repeat_count);
+void Sort(int array_size, int repeat_count);
 
 #endif //OS_LAB1_BENCH2_HPP
 

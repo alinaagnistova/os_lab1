@@ -73,6 +73,12 @@ build CMakeFiles/os_lab1.dir/src/benchmark/multi_bench.cpp.obj: CXX_COMPILER__os
   OBJECT_DIR = CMakeFiles\os_lab1.dir
   OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir\src\benchmark
 
+build CMakeFiles/os_lab1.dir/src/main.cpp.obj: CXX_COMPILER__os_lab1_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/main.cpp || cmake_object_order_depends_target_os_lab1
+  DEP_FILE = CMakeFiles\os_lab1.dir\src\main.cpp.obj.d
+  FLAGS = -O0 -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\os_lab1.dir
+  OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target os_lab1
@@ -81,7 +87,7 @@ build CMakeFiles/os_lab1.dir/src/benchmark/multi_bench.cpp.obj: CXX_COMPILER__os
 #############################################
 # Link the executable os_lab1.exe
 
-build os_lab1.exe: CXX_EXECUTABLE_LINKER__os_lab1_Debug CMakeFiles/os_lab1.dir/src/shell/shell.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/bench1.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/bench2.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/multi_bench.cpp.obj
+build os_lab1.exe: CXX_EXECUTABLE_LINKER__os_lab1_Debug CMakeFiles/os_lab1.dir/src/shell/shell.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/bench1.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/bench2.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/multi_bench.cpp.obj CMakeFiles/os_lab1.dir/src/main.cpp.obj
   FLAGS = -O0 -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\os_lab1.dir
@@ -98,56 +104,70 @@ build os_lab1.exe: CXX_EXECUTABLE_LINKER__os_lab1_Debug CMakeFiles/os_lab1.dir/s
 #############################################
 # Order-only phony target for tests
 
-build cmake_object_order_depends_target_tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+build cmake_object_order_depends_target_tests: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gmock_main cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
 
 build CMakeFiles/tests.dir/src/tests/test_main.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/tests/test_main.cpp || cmake_object_order_depends_target_tests
   DEP_FILE = CMakeFiles\tests.dir\src\tests\test_main.cpp.obj.d
   FLAGS = -O0 -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\tests.dir
   OBJECT_FILE_DIR = CMakeFiles\tests.dir\src\tests
 
 build CMakeFiles/tests.dir/src/tests/test_bench1.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/tests/test_bench1.cpp || cmake_object_order_depends_target_tests
   DEP_FILE = CMakeFiles\tests.dir\src\tests\test_bench1.cpp.obj.d
   FLAGS = -O0 -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\tests.dir
   OBJECT_FILE_DIR = CMakeFiles\tests.dir\src\tests
 
 build CMakeFiles/tests.dir/src/tests/test_bench2.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/tests/test_bench2.cpp || cmake_object_order_depends_target_tests
   DEP_FILE = CMakeFiles\tests.dir\src\tests\test_bench2.cpp.obj.d
   FLAGS = -O0 -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\tests.dir
   OBJECT_FILE_DIR = CMakeFiles\tests.dir\src\tests
 
 build CMakeFiles/tests.dir/src/tests/test_multi_bench.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/tests/test_multi_bench.cpp || cmake_object_order_depends_target_tests
   DEP_FILE = CMakeFiles\tests.dir\src\tests\test_multi_bench.cpp.obj.d
   FLAGS = -O0 -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\tests.dir
   OBJECT_FILE_DIR = CMakeFiles\tests.dir\src\tests
 
 build CMakeFiles/tests.dir/src/benchmark/bench1.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/benchmark/bench1.cpp || cmake_object_order_depends_target_tests
   DEP_FILE = CMakeFiles\tests.dir\src\benchmark\bench1.cpp.obj.d
   FLAGS = -O0 -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\tests.dir
   OBJECT_FILE_DIR = CMakeFiles\tests.dir\src\benchmark
 
 build CMakeFiles/tests.dir/src/benchmark/bench2.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/benchmark/bench2.cpp || cmake_object_order_depends_target_tests
   DEP_FILE = CMakeFiles\tests.dir\src\benchmark\bench2.cpp.obj.d
   FLAGS = -O0 -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\tests.dir
   OBJECT_FILE_DIR = CMakeFiles\tests.dir\src\benchmark
 
 build CMakeFiles/tests.dir/src/benchmark/multi_bench.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/benchmark/multi_bench.cpp || cmake_object_order_depends_target_tests
   DEP_FILE = CMakeFiles\tests.dir\src\benchmark\multi_bench.cpp.obj.d
   FLAGS = -O0 -g -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest
+  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock
   OBJECT_DIR = CMakeFiles\tests.dir
   OBJECT_FILE_DIR = CMakeFiles\tests.dir\src\benchmark
+
+build CMakeFiles/tests.dir/src/shell/shell.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/shell/shell.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles\tests.dir\src\shell\shell.cpp.obj.d
+  FLAGS = -O0 -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock
+  OBJECT_DIR = CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\tests.dir\src\shell
+
+build CMakeFiles/tests.dir/src/tests/test_shell.cpp.obj: CXX_COMPILER__tests_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/tests/test_shell.cpp || cmake_object_order_depends_target_tests
+  DEP_FILE = CMakeFiles\tests.dir\src\tests\test_shell.cpp.obj.d
+  FLAGS = -O0 -g -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googletest -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock/include -isystem C:/Users/agnis/CLionProjects/os-lab1/cmake-build-debug/_deps/googletest-src/googlemock
+  OBJECT_DIR = CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\tests.dir\src\tests
 
 
 # =============================================================================
@@ -157,9 +177,9 @@ build CMakeFiles/tests.dir/src/benchmark/multi_bench.cpp.obj: CXX_COMPILER__test
 #############################################
 # Link the executable tests.exe
 
-build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/src/tests/test_main.cpp.obj CMakeFiles/tests.dir/src/tests/test_bench1.cpp.obj CMakeFiles/tests.dir/src/tests/test_bench2.cpp.obj CMakeFiles/tests.dir/src/tests/test_multi_bench.cpp.obj CMakeFiles/tests.dir/src/benchmark/bench1.cpp.obj CMakeFiles/tests.dir/src/benchmark/bench2.cpp.obj CMakeFiles/tests.dir/src/benchmark/multi_bench.cpp.obj | lib/libgtestd.a lib/libgtest_maind.a lib/libgtestd.a || lib/libgtest_maind.a lib/libgtestd.a
+build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/src/tests/test_main.cpp.obj CMakeFiles/tests.dir/src/tests/test_bench1.cpp.obj CMakeFiles/tests.dir/src/tests/test_bench2.cpp.obj CMakeFiles/tests.dir/src/tests/test_multi_bench.cpp.obj CMakeFiles/tests.dir/src/benchmark/bench1.cpp.obj CMakeFiles/tests.dir/src/benchmark/bench2.cpp.obj CMakeFiles/tests.dir/src/benchmark/multi_bench.cpp.obj CMakeFiles/tests.dir/src/shell/shell.cpp.obj CMakeFiles/tests.dir/src/tests/test_shell.cpp.obj | lib/libgtestd.a lib/libgtest_maind.a lib/libgmockd.a lib/libgmock_maind.a lib/libgmockd.a lib/libgtestd.a || lib/libgmock_maind.a lib/libgmockd.a lib/libgtest_maind.a lib/libgtestd.a
   FLAGS = -O0 -g
-  LINK_LIBRARIES = lib/libgtestd.a  lib/libgtest_maind.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = lib/libgtestd.a  lib/libgtest_maind.a  lib/libgmockd.a  lib/libgmock_maind.a  lib/libgmockd.a  lib/libgtestd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\tests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

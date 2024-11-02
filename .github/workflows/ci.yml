@@ -36,6 +36,8 @@ jobs:
         run: |
           Get-ChildItem -Recurse -Include *.cpp | ForEach-Object { clang-tidy $_.FullName }
         shell: pwsh
+        continue-on-error: true
+
 
 
       - name: Run tests

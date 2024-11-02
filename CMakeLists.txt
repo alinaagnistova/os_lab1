@@ -12,6 +12,8 @@ add_executable(os_lab1
         include/bench1.hpp
         include/bench2.hpp
         include/multi_bench.hpp
+        include/shell.hpp
+        src/main.cpp
 )
 include(FetchContent)
 FetchContent_Declare(
@@ -28,13 +30,19 @@ add_executable(tests
         src/benchmark/bench1.cpp
         src/benchmark/bench2.cpp
         src/benchmark/multi_bench.cpp
+        src/shell/shell.cpp
+        src/tests/test_shell.cpp
 )
 
-target_link_libraries(tests gtest gtest_main)
+target_link_libraries(tests gtest gtest_main gmock gmock_main)
 
 # Включаем поддержку тестов
 enable_testing()
 add_test(NAME EMASearchTest COMMAND tests)
 add_test(NAME SortTest COMMAND tests)
 add_test(NAME MultiBenchTest COMMAND tests)
+add_test(NAME ExecuteCommandTest COMMAND tests)
+add_test(NAME ExecuteShellTest COMMAND tests)
+
+
 
