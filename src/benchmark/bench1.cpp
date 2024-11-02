@@ -1,3 +1,4 @@
+#include "../../include/bench1.hpp"
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -67,14 +68,14 @@ void read_file_and_search(string &path_to_file, string &pattern) {
 
 }
 
-int main(int argc, char *argv[]) {
-    if (argc < 4) {
-        cerr << "Usage: " << argv[0] << " <file_path> <pattern> <repeat_count>\n";
-        return 1;
-    }
-    string path_to_file = argv[1];
-    string pattern = argv[2];
-    int repeat_count = stoi(argv[3]);
+void ema_search_str(string &path_to_file, string &pattern, int repeat_count) {
+//    if (argc < 4) {
+//        cerr << "Usage: " << argv[0] << " <file_path> <pattern> <repeat_count>\n";
+//        return 1;
+//    }
+//    string path_to_file = argv[1];
+//    string pattern = argv[2];
+//    int repeat_count = stoi(argv[3]);
 
     auto start_time = chrono::high_resolution_clock::now();
     for (int i = 0; i < repeat_count; ++i) {
@@ -84,5 +85,5 @@ int main(int argc, char *argv[]) {
     auto end_time = chrono::high_resolution_clock::now();
     chrono::duration<double> elapsed = end_time - start_time;
     cout << "Total execution time: " << elapsed.count() << " seconds\n";;
-    return 0;
+//    return 0;
 }
