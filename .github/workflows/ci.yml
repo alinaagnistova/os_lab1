@@ -27,15 +27,16 @@ jobs:
 
       - name: Run clang-format
         run: |
-          clang-format -i -style=file **/*.cpp **/*.h 
+          Get-ChildItem -Recurse -Include *.cpp, *.hpp | ForEach-Object { clang-format -i -style=file $_.FullName }
           git diff --exit-code
+        shell: pwsh
         continue-on-error: true
 
       - name: Run clang-tidy
         run: |
-          for file in *.cpp; do
-            clang-tidy "$file"
-          done
+          Get-ChildItem -Recurse -Include *.cpp | ForEach-Object { clang-tidy $_.FullName }
+        shell: pwsh
+
 
       - name: Run tests
         run: ctest --tests-dir build
