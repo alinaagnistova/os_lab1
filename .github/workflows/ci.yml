@@ -40,7 +40,8 @@ jobs:
 
       - name: Copy data files
         run: |
-         copy src\tests\data\text.txt build\data\text.txt
+          mkdir -p build/src/tests/data          
+          copy src\tests\data\text.txt  build\src\tests\data\text.txt
         shell: pwsh
 
       - name: Run tests
