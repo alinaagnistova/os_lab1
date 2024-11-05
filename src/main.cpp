@@ -15,22 +15,22 @@ auto main(int argc, char* argv[]) -> int{
     if (command == "shell") {
         ExecuteShell();
     }    else if (command == "search") {
-        if (argc < 4) {
+        if (argc < 5) {
             cerr << "Usage: " << argv[0] << " search <file_path> <pattern> <repeat_count>\n";
             return 1;
         }
-        string path_to_file = argv[1];
-        string pattern = argv[2];
-        int repeat_count = stoi(argv[3]);
+        string path_to_file = argv[2];
+        string pattern = argv[3];
+        int repeat_count = stoi(argv[4]);
         EmaSearchStr(path_to_file, pattern, repeat_count);
     }
     else if (command == "sort") {
-        if (argc < 3) {
+        if (argc < 4) {
             cerr << "Usage: " << argv[0] << " sort <array_size> <repeat_count>\n";
             return 1;
         }
-        int array_size = stoi(argv[1]);
-        int repeat_count = stoi(argv[2]);
+        int array_size = stoi(argv[2]);
+        int repeat_count = stoi(argv[3]);
         Sort(array_size, repeat_count);
     }
     else if (command == "search_sort") {

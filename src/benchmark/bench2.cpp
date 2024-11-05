@@ -25,7 +25,7 @@ void BubbleSort(vector<int> &arr) {
     }
 }
 auto CreateArray(int array_size) -> vector<int>{
-    vector<int> arr;
+    vector<int> arr(array_size);
     random_device random_device;
     mt19937 gen(random_device());
     uniform_int_distribution<> distrib(MinInArray, MaxInArray);
