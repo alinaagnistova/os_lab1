@@ -12,11 +12,11 @@ void ExecuteCommand(string& command_line){
     ZeroMemory(&startup_info, sizeof(startup_info));
     startup_info.cb = sizeof(startup_info);
     ZeroMemory(&process_info, sizeof(process_info));
-
-    string cmd = "cmd.exe /C " + command_line;
+    char cmd[1024];
+    strncpy_s(cmd, command_line.c_str(), sizeof(cmd) - 1);
     if (CreateProcess(
             nullptr, // путь к исполняемому файлу
-            const_cast<char *>(cmd.c_str()),  // командная строка
+            cmd,
             nullptr,  // атрибуты защиты процесса
             nullptr, // атрибуты защиты потока
             FALSE, // наследовать дескрипторы

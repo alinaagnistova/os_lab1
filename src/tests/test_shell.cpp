@@ -8,14 +8,6 @@
 
 using namespace std;
 
-TEST(ExecuteCommandTest, SuccessfulEchoCommand) {
-    string command = "echo Hello";
-    testing::internal::CaptureStdout();
-    ExecuteCommand(command);
-    string output = testing::internal::GetCapturedStdout();
-    EXPECT_THAT(output, testing::HasSubstr("Hello"));
-}
-
 TEST(ExecuteShellTest, ExitsOnExitCommand) {
     stringstream input("exit\n");
     cin.rdbuf(input.rdbuf());

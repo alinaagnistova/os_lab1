@@ -2,7 +2,7 @@
 #include "../../include/multi_bench.hpp"
 
 TEST(MultiBenchTest, SortArrayAndFindStr) {
-    string path_to_file = "src/tests/data/text.txt";
+    string path_to_file = "../src/tests/data/text.txt";
     string pattern = "example";
     int const array_size = 100;
     int const repeat_count = 10;
