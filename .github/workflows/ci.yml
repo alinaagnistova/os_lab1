@@ -1,0 +1,50 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - lab-1
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on:  windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install CMake
+        run: choco install cmake --installargs 'ADD_CMAKE_TO_PATH=System' -y
+
+      - name: Configure CMake
+        run: cmake -S . -B build
+
+      - name: Build
+        run: cmake --build build
+
+      - name: Run clang-format
+        run: |
+          Get-ChildItem -Recurse -Include *.cpp, *.hpp | ForEach-Object { clang-format -i -style=file $_.FullName }
+          git diff --exit-code
+        shell: pwsh
+        continue-on-error: true
+
+      - name: Run clang-tidy
+        run: |
+          Get-ChildItem -Recurse -Include *.cpp | ForEach-Object { clang-tidy $_.FullName }
+        shell: pwsh
+        continue-on-error: true
+
+      - name: Copy data files
+        run: |
+          mkdir -p build/src/tests/data          
+          copy src\tests\data\text.txt  build\src\tests\data\text.txt
+        shell: pwsh
+
+      - name: Run tests
+        working-directory: build\Debug
+        run: |
+          .\tests.exe

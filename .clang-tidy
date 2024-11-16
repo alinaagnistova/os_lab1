@@ -1,18 +1,10 @@
 ---
 Checks: '-*,
-  bugprone-*,
-  -bugprone-easily-swappable-parameters,
-  cert-*,
-  concurrency-*,
-  cppcoreguidelines-*,
-  google-*,
+  readability-*,
   hicpp-*,
-  misc-*,
-  -misc-no-recursion,
   modernize-*,
-  -modernize-use-trailing-return-type,
-  performance-*,
-  readability-*'
+  -bugprone-*,
+  -cppcoreguidelines-*'
 HeaderFileExtensions:
   - hpp
 ImplementationFileExtensions:
