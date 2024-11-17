@@ -53,6 +53,26 @@ SYS% будет высоким, так как системные вызовы (�
 
 3 нагрузчика
 
+![image](https://github.com/user-attachments/assets/f85684ba-9cae-419a-a802-393e64dee29d)
+![image](https://github.com/user-attachments/assets/248c61fc-209f-4f50-bb14-4025642c5c6c)
+
+![image](https://github.com/user-attachments/assets/a439fa32-0875-4177-ae0d-e234ea5fc0c8)
 
 
+![image](https://github.com/user-attachments/assets/bd9dbe39-8af3-4ff3-a633-d47b6a2c9f20)
+![image](https://github.com/user-attachments/assets/bd9da691-f824-468a-8c12-6194a13f05a4)
+//1
+
+![image](https://github.com/user-attachments/assets/d1df9443-ab4e-4cab-921d-a1a453b93bc7)
+
+ ![image](https://github.com/user-attachments/assets/368cbb20-2a1b-4450-af32-9a4fdf791cb8)
  
+![image](https://github.com/user-attachments/assets/411f4b8c-41e6-4e86-a089-385adc870d03)
+//3
+![image](https://github.com/user-attachments/assets/a0c12965-4a3b-430a-922b-f5b902a37dcf)
+![image](https://github.com/user-attachments/assets/cd0fc131-88cc-4983-96b0-aca67cb3fefb)
+![image](https://github.com/user-attachments/assets/128da663-112b-4e0f-9bc2-c8a36f04a8be)
+
+
+
+
