@@ -115,6 +115,14 @@ multi-bench:
 ![image](https://github.com/user-attachments/assets/2ff6b5bd-0976-4cb3-8f19-e88340c9c492)
 ![image](https://github.com/user-attachments/assets/3d56decc-7474-4068-9b25-523d352231c0)
 
+С оптимизацией:
+//1
+![image](https://github.com/user-attachments/assets/acacd58f-d3bd-44ae-8460-300aa18641bd)
+//2
+![image](https://github.com/user-attachments/assets/92e60733-1be4-42b2-a813-863e9a3ea551)
+//3
+![image](https://github.com/user-attachments/assets/6df0c4c0-f06a-4c09-b0b8-2ce7a162a381)
+
 
 
 
