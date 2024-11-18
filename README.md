@@ -72,7 +72,14 @@ SYS% будет высоким, так как системные вызовы (�
 ![image](https://github.com/user-attachments/assets/a0c12965-4a3b-430a-922b-f5b902a37dcf)
 ![image](https://github.com/user-attachments/assets/cd0fc131-88cc-4983-96b0-aca67cb3fefb)
 ![image](https://github.com/user-attachments/assets/128da663-112b-4e0f-9bc2-c8a36f04a8be)
+//5
+![image](https://github.com/user-attachments/assets/e60592f9-33e9-4039-b402-4b56ec77a3d8)
+![image](https://github.com/user-attachments/assets/4edfcdf2-9d82-4df6-87f2-2306b7101dc1)
+![image](https://github.com/user-attachments/assets/030c5eff-46dc-47fe-bccc-8ff91e3309ff)
+![image](https://github.com/user-attachments/assets/39280c9d-48f3-48e7-931e-8ee7cd9cc079)
+![image](https://github.com/user-attachments/assets/8af1379b-de07-4e13-85ab-aeaf888fbec3)
 
+![image](https://github.com/user-attachments/assets/149a0281-6e8e-4671-823a-cb91d72ddfac)
 
 
 
