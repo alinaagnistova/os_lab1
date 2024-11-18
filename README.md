@@ -38,13 +38,13 @@ SYS% будет высоким, так как системные вызовы (�
 - Procexp – для отслеживания USER%, SYS% и переключений контекста.
 - Диспетчер задач – для мониторинга процессора и диска. 
  #### Результаты измерений
- `ema-serach-str`  </br>
- 1 нагрузчик
+ `ema-search-str` 
+##### 1 нагрузчик
 ![image](https://github.com/user-attachments/assets/ed0d49d0-d154-4d32-a183-b9c40453a4a6)
- ![image](https://github.com/user-attachments/assets/6510c518-1b01-48cc-873e-86c58803cdd7)
- ![image](https://github.com/user-attachments/assets/16f96d3c-4d95-435b-a08f-140599e3b123)
- ![image](https://github.com/user-attachments/assets/a97a3b59-5d0e-4b6b-a395-c8f1f6c1892b)
- ![image](https://github.com/user-attachments/assets/24002b28-f4ad-4bd7-acb2-d03608a461a5)
+<!-- ![image](https://github.com/user-attachments/assets/6510c518-1b01-48cc-873e-86c58803cdd7) -->
+![image](https://github.com/user-attachments/assets/16f96d3c-4d95-435b-a08f-140599e3b123)
+![image](https://github.com/user-attachments/assets/a97a3b59-5d0e-4b6b-a395-c8f1f6c1892b)
+![image](https://github.com/user-attachments/assets/24002b28-f4ad-4bd7-acb2-d03608a461a5)
 
 ![image](https://github.com/user-attachments/assets/64179d50-b73b-46bc-9814-95112fa593d1)
 ![image](https://github.com/user-attachments/assets/80b842ea-8ddd-428e-b4b7-3165b97a39bf)
