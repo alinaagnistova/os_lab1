@@ -1,6 +1,6 @@
 ## Операционные системы 
 ### Лабораторная работа №1
-#### Вариант: Windows ema-serach-str sort </br>
+#### Вариант: Windows ema-search-str sort </br>
 #### Задание </br>
 #### Задание Часть 1. Запуск программ </br>
 
@@ -36,69 +36,43 @@ SYS% будет высоким, так как системные вызовы (�
 #### Средства мониторинга
 - Resmon – для мониторинга диска.
 - Procexp – для отслеживания USER%, SYS% и переключений контекста.
-- Диспетчер задач – для мониторинга процессора и диска. 
+- Диспетчер задач – для мониторинга процессора и диска.
+
  #### Результаты измерений
  `ema-search-str` 
 ##### 1 нагрузчик
 ![image](https://github.com/user-attachments/assets/ed0d49d0-d154-4d32-a183-b9c40453a4a6)
-<!-- ![image](https://github.com/user-attachments/assets/6510c518-1b01-48cc-873e-86c58803cdd7) -->
-![image](https://github.com/user-attachments/assets/16f96d3c-4d95-435b-a08f-140599e3b123)
-![image](https://github.com/user-attachments/assets/a97a3b59-5d0e-4b6b-a395-c8f1f6c1892b)
 ![image](https://github.com/user-attachments/assets/24002b28-f4ad-4bd7-acb2-d03608a461a5)
-
-![image](https://github.com/user-attachments/assets/64179d50-b73b-46bc-9814-95112fa593d1)
 ![image](https://github.com/user-attachments/assets/80b842ea-8ddd-428e-b4b7-3165b97a39bf)
-![image](https://github.com/user-attachments/assets/32d1d0c7-a539-45b6-a8c3-5987bb040d9e)
-![image](https://github.com/user-attachments/assets/f0c07855-d1d6-4f59-b2cc-047a4c15d0a9)
-
-3 нагрузчика
-
-![image](https://github.com/user-attachments/assets/f85684ba-9cae-419a-a802-393e64dee29d)
-![image](https://github.com/user-attachments/assets/248c61fc-209f-4f50-bb14-4025642c5c6c)
-
-![image](https://github.com/user-attachments/assets/a439fa32-0875-4177-ae0d-e234ea5fc0c8)
-
-
-![image](https://github.com/user-attachments/assets/bd9dbe39-8af3-4ff3-a633-d47b6a2c9f20)
-![image](https://github.com/user-attachments/assets/bd9da691-f824-468a-8c12-6194a13f05a4)
-//1
-
-![image](https://github.com/user-attachments/assets/d1df9443-ab4e-4cab-921d-a1a453b93bc7)
-
- ![image](https://github.com/user-attachments/assets/368cbb20-2a1b-4450-af32-9a4fdf791cb8)
- 
 ![image](https://github.com/user-attachments/assets/411f4b8c-41e6-4e86-a089-385adc870d03)
-//3
-![image](https://github.com/user-attachments/assets/a0c12965-4a3b-430a-922b-f5b902a37dcf)
-![image](https://github.com/user-attachments/assets/cd0fc131-88cc-4983-96b0-aca67cb3fefb)
+
+##### 3 нагрузчика
+![image](https://github.com/user-attachments/assets/248c61fc-209f-4f50-bb14-4025642c5c6c)
+![image](https://github.com/user-attachments/assets/a439fa32-0875-4177-ae0d-e234ea5fc0c8)
+![image](https://github.com/user-attachments/assets/bd9da691-f824-468a-8c12-6194a13f05a4)
 ![image](https://github.com/user-attachments/assets/128da663-112b-4e0f-9bc2-c8a36f04a8be)
-//5
-![image](https://github.com/user-attachments/assets/e60592f9-33e9-4039-b402-4b56ec77a3d8)
+
+##### 5 нагрузчиков
 ![image](https://github.com/user-attachments/assets/4edfcdf2-9d82-4df6-87f2-2306b7101dc1)
-![image](https://github.com/user-attachments/assets/030c5eff-46dc-47fe-bccc-8ff91e3309ff)
 ![image](https://github.com/user-attachments/assets/39280c9d-48f3-48e7-931e-8ee7cd9cc079)
 ![image](https://github.com/user-attachments/assets/8af1379b-de07-4e13-85ab-aeaf888fbec3)
-
 ![image](https://github.com/user-attachments/assets/149a0281-6e8e-4671-823a-cb91d72ddfac)
 
-sort
-//1
+`sort`
+##### 1 нагрузчик
 ![image](https://github.com/user-attachments/assets/f992008f-ef7e-4371-afc7-ba6e51b99a8b)
 ![image](https://github.com/user-attachments/assets/2dd123e4-bc29-4aac-877b-ad9d84c05253)
-![image](https://github.com/user-attachments/assets/e3ede237-9e93-4fec-bb28-b4c445025b9c)
 ![image](https://github.com/user-attachments/assets/17fe6221-9869-46f6-830f-2c15bdeb5f58)
-//1 148
-![image](https://github.com/user-attachments/assets/31bed94d-42fb-4ffa-938e-b521262236e5)
-![image](https://github.com/user-attachments/assets/e7f5a5a2-a66b-4b8c-81ce-a07916f3405b)
 ![image](https://github.com/user-attachments/assets/0cf572d2-91f5-4a4f-9a0b-7c75033f5b7e)
-//10
-
-![image](https://github.com/user-attachments/assets/a1a8ef6d-54b6-4650-8c9e-904722767bd3)
+##### 10 нагрузчиков
+//сюда скрин с диспетчера задач
 ![image](https://github.com/user-attachments/assets/ce4b6c57-f194-4b68-b400-18738a89bc5f)
 ![image](https://github.com/user-attachments/assets/3e4fe686-9bfa-466e-ae99-498df696f464)
-//15
+
 А больше 10 запустить не выйдет, ноут не вывозит....
-multi-bench:
+
+
+`multi-bench:`
 //1
 ![image](https://github.com/user-attachments/assets/6e9ed31a-cc2a-4d8c-b433-e2e41eda23c1)
 ![image](https://github.com/user-attachments/assets/99a048b9-0ef3-49da-a907-61631daf116b)
