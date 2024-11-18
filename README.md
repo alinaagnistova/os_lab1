@@ -123,6 +123,25 @@ multi-bench:
 //3
 ![image](https://github.com/user-attachments/assets/6df0c4c0-f06a-4c09-b0b8-2ce7a162a381)
 
+/1 000 000 1
+![image](https://github.com/user-attachments/assets/2c9d6e42-1854-4801-9676-1b464ca1a536)
+![image](https://github.com/user-attachments/assets/4a9d643e-444e-4f77-a905-8daafdf81e9a)
+/1 000 000 2
+![image](https://github.com/user-attachments/assets/465a24c3-dff6-4697-b490-15a7ae7bdd1d)
+![image](https://github.com/user-attachments/assets/f0c0f6a3-480c-4ce6-b752-08ed4ae05bc4)
+![image](https://github.com/user-attachments/assets/87a43cde-81a6-42cc-9c0a-0609b54c956e)
+/3
+![image](https://github.com/user-attachments/assets/c06791ad-f23f-4195-8010-1eb7d3cac234)
+![image](https://github.com/user-attachments/assets/b530f36f-4b46-4da1-962a-70b06973dba7)
+
+
+
+/1 000 000 5
+
+
+
+
+
 
 
 
