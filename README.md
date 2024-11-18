@@ -81,5 +81,43 @@ SYS% будет высоким, так как системные вызовы (�
 
 ![image](https://github.com/user-attachments/assets/149a0281-6e8e-4671-823a-cb91d72ddfac)
 
+sort
+//1
+![image](https://github.com/user-attachments/assets/f992008f-ef7e-4371-afc7-ba6e51b99a8b)
+![image](https://github.com/user-attachments/assets/2dd123e4-bc29-4aac-877b-ad9d84c05253)
+![image](https://github.com/user-attachments/assets/e3ede237-9e93-4fec-bb28-b4c445025b9c)
+![image](https://github.com/user-attachments/assets/17fe6221-9869-46f6-830f-2c15bdeb5f58)
+//1 148
+![image](https://github.com/user-attachments/assets/31bed94d-42fb-4ffa-938e-b521262236e5)
+![image](https://github.com/user-attachments/assets/e7f5a5a2-a66b-4b8c-81ce-a07916f3405b)
+![image](https://github.com/user-attachments/assets/0cf572d2-91f5-4a4f-9a0b-7c75033f5b7e)
+//10
+
+![image](https://github.com/user-attachments/assets/a1a8ef6d-54b6-4650-8c9e-904722767bd3)
+![image](https://github.com/user-attachments/assets/ce4b6c57-f194-4b68-b400-18738a89bc5f)
+![image](https://github.com/user-attachments/assets/3e4fe686-9bfa-466e-ae99-498df696f464)
+//15
+А больше 10 запустить не выйдет, ноут не вывозит....
+multi-bench:
+//1
+![image](https://github.com/user-attachments/assets/6e9ed31a-cc2a-4d8c-b433-e2e41eda23c1)
+![image](https://github.com/user-attachments/assets/99a048b9-0ef3-49da-a907-61631daf116b)
+![image](https://github.com/user-attachments/assets/3a5d7abd-6aed-48aa-a3d1-66c180835f29)
+![image](https://github.com/user-attachments/assets/86f8cb89-72da-4c16-ba7c-6fddbbe8902f)
+//3
+![image](https://github.com/user-attachments/assets/93dac60c-04d0-4fbd-a7a0-ea252cb38827)
+![image](https://github.com/user-attachments/assets/5ce8dbe5-b4d0-4b91-a813-04b7a7091a32)
+![image](https://github.com/user-attachments/assets/955e9cbe-ab8a-4244-8403-a93ac70602ff)
+![image](https://github.com/user-attachments/assets/3f1dbe50-520b-4883-ad43-f99d3450d85f)
+//5
+![image](https://github.com/user-attachments/assets/b1dc4c38-c8fb-4f64-9456-150d6cfbbafc)
+![image](https://github.com/user-attachments/assets/5748efea-95a1-4c6a-9086-99aae3f341fc)
+![image](https://github.com/user-attachments/assets/2ff6b5bd-0976-4cb3-8f19-e88340c9c492)
+![image](https://github.com/user-attachments/assets/3d56decc-7474-4068-9b25-523d352231c0)
+
+
+
+
+
 
 
