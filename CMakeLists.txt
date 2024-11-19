@@ -6,6 +6,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0")
 
 add_executable(os_lab1
         src/shell/shell.cpp
+        src/shell/cd_shell.cpp
         src/benchmark/bench1.cpp
         src/benchmark/bench2.cpp
         src/benchmark/multi_bench.cpp
@@ -14,6 +15,8 @@ add_executable(os_lab1
         include/multi_bench.hpp
         include/shell.hpp
         src/main.cpp
+        src/benchmark/collatz_conjecture.cpp
+        include/cd_shell.hpp
 )
 include(FetchContent)
 FetchContent_Declare(
