@@ -39,7 +39,7 @@ SYS% будет высоким, так как системные вызовы (�
 - Диспетчер задач – для мониторинга процессора и диска.
 
  #### Результаты измерений
- `ema-search-str` 
+`ema-search-str:` 
 ##### 1 нагрузчик
 ![image](https://github.com/user-attachments/assets/ed0d49d0-d154-4d32-a183-b9c40453a4a6)
 ![image](https://github.com/user-attachments/assets/24002b28-f4ad-4bd7-acb2-d03608a461a5)
@@ -58,14 +58,14 @@ SYS% будет высоким, так как системные вызовы (�
 ![image](https://github.com/user-attachments/assets/8af1379b-de07-4e13-85ab-aeaf888fbec3)
 ![image](https://github.com/user-attachments/assets/149a0281-6e8e-4671-823a-cb91d72ddfac)
 
-`sort`
+`sort:`
 ##### 1 нагрузчик
 ![image](https://github.com/user-attachments/assets/f992008f-ef7e-4371-afc7-ba6e51b99a8b)
 ![image](https://github.com/user-attachments/assets/2dd123e4-bc29-4aac-877b-ad9d84c05253)
 ![image](https://github.com/user-attachments/assets/17fe6221-9869-46f6-830f-2c15bdeb5f58)
 ![image](https://github.com/user-attachments/assets/0cf572d2-91f5-4a4f-9a0b-7c75033f5b7e)
 ##### 10 нагрузчиков
-//сюда скрин с диспетчера задач
+![image](https://github.com/user-attachments/assets/63cea7e0-59c7-40f7-82ea-338de47953b3)
 ![image](https://github.com/user-attachments/assets/ce4b6c57-f194-4b68-b400-18738a89bc5f)
 ![image](https://github.com/user-attachments/assets/3e4fe686-9bfa-466e-ae99-498df696f464)
 
@@ -73,52 +73,50 @@ SYS% будет высоким, так как системные вызовы (�
 
 
 `multi-bench:`
-//1
+##### 1 нагрузчик
 ![image](https://github.com/user-attachments/assets/6e9ed31a-cc2a-4d8c-b433-e2e41eda23c1)
 ![image](https://github.com/user-attachments/assets/99a048b9-0ef3-49da-a907-61631daf116b)
 ![image](https://github.com/user-attachments/assets/3a5d7abd-6aed-48aa-a3d1-66c180835f29)
 ![image](https://github.com/user-attachments/assets/86f8cb89-72da-4c16-ba7c-6fddbbe8902f)
-//3
+##### 3 нагрузчика
 ![image](https://github.com/user-attachments/assets/93dac60c-04d0-4fbd-a7a0-ea252cb38827)
 ![image](https://github.com/user-attachments/assets/5ce8dbe5-b4d0-4b91-a813-04b7a7091a32)
 ![image](https://github.com/user-attachments/assets/955e9cbe-ab8a-4244-8403-a93ac70602ff)
 ![image](https://github.com/user-attachments/assets/3f1dbe50-520b-4883-ad43-f99d3450d85f)
-//5
+##### 5 нагрузчиков
 ![image](https://github.com/user-attachments/assets/b1dc4c38-c8fb-4f64-9456-150d6cfbbafc)
 ![image](https://github.com/user-attachments/assets/5748efea-95a1-4c6a-9086-99aae3f341fc)
 ![image](https://github.com/user-attachments/assets/2ff6b5bd-0976-4cb3-8f19-e88340c9c492)
 ![image](https://github.com/user-attachments/assets/3d56decc-7474-4068-9b25-523d352231c0)
 
-С оптимизацией:
-//1
-![image](https://github.com/user-attachments/assets/acacd58f-d3bd-44ae-8460-300aa18641bd)
-//2
-![image](https://github.com/user-attachments/assets/92e60733-1be4-42b2-a813-863e9a3ea551)
-//3
-![image](https://github.com/user-attachments/assets/6df0c4c0-f06a-4c09-b0b8-2ce7a162a381)
+##### С оптимизацией:
+`ema-search-str`
 
-/1 000 000 1
+![image](https://github.com/user-attachments/assets/acacd58f-d3bd-44ae-8460-300aa18641bd)
+
+`sort`
+
+![image](https://github.com/user-attachments/assets/92e60733-1be4-42b2-a813-863e9a3ea551)
+
+`multi-bench`
+
+![image](https://github.com/user-attachments/assets/6df0c4c0-f06a-4c09-b0b8-2ce7a162a381)
+##### Доп. нагрузчик
+
+`collatz-conjecture:`
+
+##### 1 нагрузчик
+
 ![image](https://github.com/user-attachments/assets/2c9d6e42-1854-4801-9676-1b464ca1a536)
 ![image](https://github.com/user-attachments/assets/4a9d643e-444e-4f77-a905-8daafdf81e9a)
-/1 000 000 2
+
+##### 2 нагрузчика
+
 ![image](https://github.com/user-attachments/assets/465a24c3-dff6-4697-b490-15a7ae7bdd1d)
 ![image](https://github.com/user-attachments/assets/f0c0f6a3-480c-4ce6-b752-08ed4ae05bc4)
 ![image](https://github.com/user-attachments/assets/87a43cde-81a6-42cc-9c0a-0609b54c956e)
-/3
+
+##### 3 нагрузчика
+
 ![image](https://github.com/user-attachments/assets/c06791ad-f23f-4195-8010-1eb7d3cac234)
 ![image](https://github.com/user-attachments/assets/b530f36f-4b46-4da1-962a-70b06973dba7)
-
-
-
-/1 000 000 5
-
-
-
-
-
-
-
-
-
-
-
