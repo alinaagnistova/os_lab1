@@ -3,6 +3,7 @@
 #include <vector>
 #include <sstream>
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 string current_directory = ".";
@@ -13,10 +14,30 @@ vector<string> SplitPipelineCommands(const string &command_line) {
     string command;
 
     while (getline(str_stream, command, '|')) {
-        commands.push_back(command);
+        command.erase(command.begin(), find_if(command.begin(), command.end(), [](unsigned char ch) {
+            return !isspace(ch);
+        }));
+        command.erase(find_if(command.rbegin(), command.rend(), [](unsigned char ch) {
+            return !isspace(ch);
+        }).base(), command.end());
+
+        if (!command.empty()) {
+            commands.push_back(command);
+        }
     }
 
     return commands;
+}
+bool IsValidCommand(const string &command_line) {
+    if (command_line.find("||") != string::npos) {
+        cerr << "Invalid command: multiple consecutive pipes are not allowed.\n";
+        return false;
+    }
+    if (command_line.find('|') == 0 || command_line.back() == '|') {
+        cerr << "Invalid command: command cannot start or end with a pipe.\n";
+        return false;
+    }
+    return true;
 }
 
 void ExecutePipeline(const vector<string> &commands) {
@@ -117,6 +138,9 @@ void ExecuteShellWithCd() {
             break;
         }
         if (HandleCdCommand(command_line)) {
+            continue;
+        }
+        if (!IsValidCommand(command_line)) {
             continue;
         }
         vector<string> commands = SplitPipelineCommands(command_line);
