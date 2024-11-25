@@ -10,7 +10,7 @@
 
 using namespace std;
 
-void ReadAndSearch(string &path_to_file, string &pattern, int repeat_count) {
+void ReadAndSearch(const string &path_to_file,const string &pattern, int repeat_count) {
     const size_t buffer_size = 32 * 1024 * 1024; // 32 MiB
     string buffer;
     string prev_line;

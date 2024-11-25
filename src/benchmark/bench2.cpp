@@ -44,5 +44,5 @@ void Sort(int array_size, int repeat_count) {
 
     auto end_time = chrono::high_resolution_clock::now();
     chrono::duration<double> elapsed = end_time - start_time;
-    cout << "Total execution time: " << elapsed.count() << " seconds\n";
+    cout << "Total execution time for " << repeat_count << " repetitions: " << elapsed.count() << " seconds\n";
 }

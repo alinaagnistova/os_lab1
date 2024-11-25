@@ -55,6 +55,12 @@ build CMakeFiles/os_lab1.dir/src/shell/shell.cpp.obj: CXX_COMPILER__os_lab1_unsc
   OBJECT_DIR = CMakeFiles\os_lab1.dir
   OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir\src\shell
 
+build CMakeFiles/os_lab1.dir/src/shell/cd_shell.cpp.obj: CXX_COMPILER__os_lab1_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/shell/cd_shell.cpp || cmake_object_order_depends_target_os_lab1
+  DEP_FILE = CMakeFiles\os_lab1.dir\src\shell\cd_shell.cpp.obj.d
+  FLAGS = -O0 -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\os_lab1.dir
+  OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir\src\shell
+
 build CMakeFiles/os_lab1.dir/src/benchmark/bench1.cpp.obj: CXX_COMPILER__os_lab1_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/benchmark/bench1.cpp || cmake_object_order_depends_target_os_lab1
   DEP_FILE = CMakeFiles\os_lab1.dir\src\benchmark\bench1.cpp.obj.d
   FLAGS = -O0 -g -fdiagnostics-color=always
@@ -79,6 +85,12 @@ build CMakeFiles/os_lab1.dir/src/main.cpp.obj: CXX_COMPILER__os_lab1_unscanned_D
   OBJECT_DIR = CMakeFiles\os_lab1.dir
   OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir\src
 
+build CMakeFiles/os_lab1.dir/src/benchmark/collatz_conjecture.cpp.obj: CXX_COMPILER__os_lab1_unscanned_Debug C$:/Users/agnis/CLionProjects/os-lab1/src/benchmark/collatz_conjecture.cpp || cmake_object_order_depends_target_os_lab1
+  DEP_FILE = CMakeFiles\os_lab1.dir\src\benchmark\collatz_conjecture.cpp.obj.d
+  FLAGS = -O0 -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\os_lab1.dir
+  OBJECT_FILE_DIR = CMakeFiles\os_lab1.dir\src\benchmark
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target os_lab1
@@ -87,7 +99,7 @@ build CMakeFiles/os_lab1.dir/src/main.cpp.obj: CXX_COMPILER__os_lab1_unscanned_D
 #############################################
 # Link the executable os_lab1.exe
 
-build os_lab1.exe: CXX_EXECUTABLE_LINKER__os_lab1_Debug CMakeFiles/os_lab1.dir/src/shell/shell.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/bench1.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/bench2.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/multi_bench.cpp.obj CMakeFiles/os_lab1.dir/src/main.cpp.obj
+build os_lab1.exe: CXX_EXECUTABLE_LINKER__os_lab1_Debug CMakeFiles/os_lab1.dir/src/shell/shell.cpp.obj CMakeFiles/os_lab1.dir/src/shell/cd_shell.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/bench1.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/bench2.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/multi_bench.cpp.obj CMakeFiles/os_lab1.dir/src/main.cpp.obj CMakeFiles/os_lab1.dir/src/benchmark/collatz_conjecture.cpp.obj
   FLAGS = -O0 -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\os_lab1.dir

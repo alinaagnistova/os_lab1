@@ -3,6 +3,7 @@
 #include "../include/bench1.hpp"
 #include "../include/bench2.hpp"
 #include "../include/multi_bench.hpp"
+#include "../include/cd_shell.hpp"
 
 using namespace std;
 auto main(int argc, char* argv[]) -> int{
@@ -14,7 +15,9 @@ auto main(int argc, char* argv[]) -> int{
 
     if (command == "shell") {
         ExecuteShell();
-    }    else if (command == "search") {
+    } else if (command == "cd_shell"){
+        ExecuteShellWithCd();
+    }else if (command == "search") {
         if (argc < 5) {
             cerr << "Usage: " << argv[0] << " search <file_path> <pattern> <repeat_count>\n";
             return 1;
@@ -34,15 +37,15 @@ auto main(int argc, char* argv[]) -> int{
         Sort(array_size, repeat_count);
     }
     else if (command == "search_sort") {
-        if (argc < 6) {
+        if (argc < 7) {
             cerr << "Usage: " << argv[0] << " <file_path> <pattern> <array_size> <repeat_count> <threads>\n";
             return 1;
         }
-        string path_to_file = argv[1];
-        string pattern = argv[2];
-        int array_size = stoi(argv[3]);
-        int repeat_count = stoi(argv[4]);
-        int num_threads = stoi(argv[5]);
+        string path_to_file = argv[2];
+        string pattern = argv[3];
+        int array_size = stoi(argv[4]);
+        int repeat_count = stoi(argv[5]);
+        int num_threads = stoi(argv[6]);
         SortAndEmaSearchStr(path_to_file, pattern, array_size, repeat_count, num_threads);
     }
     else {
